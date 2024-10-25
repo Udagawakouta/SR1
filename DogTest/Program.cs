@@ -10,18 +10,16 @@ namespace DogTest
     {
         static void Main(string[] args)
         {
-            Dog hachi = new Dog();
-            //hachi.Bark();
+            Player player = new Player("ロト", 1);
 
-            Dog pochi = new Dog();
+            Console.WriteLine("名前 : {0}", player.GetName());
+            Console.WriteLine("レベル : {0}", player.GetLevel());
 
-            Console.WriteLine("空腹状態　: {0}", pochi.IsHungry());
+            player.Attack();
+            player.Defence();
 
-            pochi.Eat();
-            Console.WriteLine("空腹状態　: {0}", pochi.IsHungry());
-
-            pochi.Run();
-            Console.WriteLine("空腹状態　: {0}", pochi.IsHungry());
+            player.LevelUp();
+            Console.WriteLine("レベル : {0}", player.GetLevel());
 
             Console.ReadLine();
         }
