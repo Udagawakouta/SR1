@@ -9,7 +9,7 @@ namespace DogTest
     internal class Player
     {
         private string name;
-        private int level;
+        public int level;
 
         public Player(string name,int level)
         {

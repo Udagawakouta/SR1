@@ -12,6 +12,10 @@ namespace DogTest
         {
             Player player = new Player("ロト", 1);
 
+            // 提出期限
+            player.level = 99999;
+            Console.WriteLine("レベル : {0}", player.GetLevel());
+
             Console.WriteLine("名前 : {0}", player.GetName());
             Console.WriteLine("レベル : {0}", player.GetLevel());
 
