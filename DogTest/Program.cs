@@ -10,21 +10,54 @@ namespace DogTest
     {
         static void Main(string[] args)
         {
-            Player player = new Player("ロト", 1);
+            FlyingRobot flyingRobot = new FlyingRobot("空飛ぶロボ");
 
-            // 提出期限
-            player.level = 99999;
-            Console.WriteLine("レベル : {0}", player.GetLevel());
+            Console.WriteLine("名前:{0}", flyingRobot.GetName());
+            Console.WriteLine("電源:{0}", flyingRobot.GetPowerStatus());
 
-            Console.WriteLine("名前 : {0}", player.GetName());
-            Console.WriteLine("レベル : {0}", player.GetLevel());
+            flyingRobot.DropBomb();
 
-            player.Attack();
-            player.Defence();
+            flyingRobot.PowerOn();
+            flyingRobot.DropBomb();
 
-            player.LevelUp();
-            Console.WriteLine("レベル : {0}", player.GetLevel());
+            flyingRobot.PowerOff();
 
+            Console.WriteLine("----------");
+
+            // タンクロボをテストする
+            TankRobot tankRobot = new TankRobot("タンクロボ");
+
+            Console.WriteLine("名前:{0}", tankRobot.GetName());
+            Console.WriteLine("電源:{0}", tankRobot.GetPowerStatus());
+
+            tankRobot.ShootCannon();
+
+            tankRobot.PowerOn();
+            tankRobot.ShootCannon();
+
+            tankRobot.PowerOff();
+
+            Console.WriteLine("----------");
+
+            // TabkRobotクラスの実態を大量生産
+            TankRobot[] tanks = new TankRobot[5];
+
+            // TankRobot ５体分の実態を作る
+            for (int i = 0; i < tanks.Length; i++)
+            {
+                tanks[i] = new TankRobot("タンクNo." + i);
+            }
+
+            for (int i = 0; i < tanks.Length; i++)
+            {
+                tanks[i].PowerOn();
+            }
+            foreach (TankRobot tank in tanks)
+            {
+                tank.ShootCannon();
+            }
+
+            // 一時停止
             Console.ReadLine();
         }
     }
