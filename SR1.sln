@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogTest", "DogTest\DogTest.csproj", "{4146E706-DB0D-4506-91B2-95EEF6210967}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{4E2A5161-6F2C-45D0-B1C0-0B6A78D92180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4146E706-DB0D-4506-91B2-95EEF6210967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4146E706-DB0D-4506-91B2-95EEF6210967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4146E706-DB0D-4506-91B2-95EEF6210967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2A5161-6F2C-45D0-B1C0-0B6A78D92180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2A5161-6F2C-45D0-B1C0-0B6A78D92180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2A5161-6F2C-45D0-B1C0-0B6A78D92180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2A5161-6F2C-45D0-B1C0-0B6A78D92180}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

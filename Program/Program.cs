@@ -1,14 +1,15 @@
-﻿using System;
+﻿using DogTest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DogTest
+namespace Program
 {
     internal class Program
     {
-        static void main(string[]args)
+        static void main(string[] args)
         {
             Robot robot = new Robot("ロボット");
             Console.WriteLine("名前:{0}", robot.GetName());
@@ -24,6 +25,6 @@ namespace DogTest
 
             // 一時停止
             Console.ReadLine();
-        } 
+        }
     }
 }
